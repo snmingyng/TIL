@@ -5,7 +5,7 @@
 ## ⚛️React
 ### 1. [JSX](React/JSX.md)
 ### 2. [리액트 엘리먼트](React/React_Element.md)
-### 3. [컴포넌트와 props](React/Compnent.md)
+### 3. [컴포넌트와 props](React/Component.md)
 
 
 
