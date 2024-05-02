@@ -130,3 +130,41 @@ useMemo()는 함수의 결과값을 반환하지만 useCallback()은 함수를 �
 > 의존성 배열에 있는 변수 중 하나라도 변경되면 메모이제이션이 된 콜백 함수를 반환한다. 
 >
 > 콜백 훅을 사용하지않고 컴포넌트 내에 함수를 정의하면 렌더링때마다 함수가 새로 정의되어 불필요한 반복작업이 생기기 때문에 사용된다.
+
+# 6. useRef
+useRef() 훅은 레퍼런스 객체를 반환한다. 
+
+ **레퍼런스(참조): 특정 컴포넌트에 접근할 수 있는 객체. <br>
+ .current라는 속성은 현재 레퍼런스(참조)하고 있는 엘리먼트를 의미한다.**
+
+> ``` jsx
+> const refContainer = useRef(초기값);
+>```
+> 파라미터로 들어온 초깃값으로 초기화된 레퍼런스 객체를 반환한다.
+> 
+**✅useRef() 훅은 변경 가능한 .current 속성을 가진 하나의 상자다.**
+
+> ```jsx
+> function TextInputWithFocusButton(props) {
+>   //useRef() 훅 초기값 null    
+>    const inputElem = useRef(null);
+>
+>    const onButtonClick () => {
+>    // current는 마운트된 input element를 가르킨다.
+>    // 클릭 시 호출되어 실제 엘리먼트에 접근해 focus()함수를 호출한다.
+>     inputElem.current.focus();
+>   };
+>
+>   return (    //버튼 클릭 시 input 태그에 포커스.
+>    <>
+>       <input ref={inputElem} type="text" />
+>       <button onClick={onButtonClick}>Focus the input </button>
+>   </>
+>   );
+>}
+>```
+
+# 7. 훅의 규칙
+1. 훅은 리액트 함수 컴포넌트의 최상위 레벨(Top Level)에서만 호출해야한다.(반복문이나 조건문, 중첩된 함수 안에서 호출하면 안됨.)
+2. 컴포넌트가 렌더링될 때마다 매 번 같은 순서로 호출되어야 한다.
+3. 리액트 함수 컴포넌트에서 호출하거나 직접 만든 커스텀 훅에서만 호출할 수 있다.
