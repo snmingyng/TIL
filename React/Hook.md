@@ -25,7 +25,7 @@ function Counter(props) {   //함수컴포넌트 선언
 > ```jsx
 > const [변수명, set함수명] = useState(초깃값);
 >```
->useState()를 호출할 때는 파라미터롤 선언할 state의 초깃값을 넣어야한다. 초깃값을 넣은 useState()를 호출하면 리턴값으로 배열을 뱉는다.
+>useState()를 호출할 때는 파라미터를 선언할 state의 초깃값을 넣어야한다. 초깃값을 넣은 useState()를 호출하면 리턴값으로 배열을 뱉는다.
 ```jsx
 import React, {useState} from "react";
 
