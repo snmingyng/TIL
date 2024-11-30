@@ -1,5 +1,7 @@
 # 1. Array
 ## 유용한 메서드
+
+[온갖 메서드 짬뽕해서 푸는 문제 꼭 정리해놓을 것](https://school.programmers.co.kr/learn/courses/30/lessons/120844)
 ### __array.length__: 배열의 길이 반환
 ### __array.push()__: 배열의 끝에 요소를 추가
 ### __array.splice__: 배열의 기존 요소를 삭제 또는 교체하거나 새 요소를 추가하여 배열의 내용을 변경
