@@ -1,9 +1,12 @@
 # 1. Array
 ## 유용한 메서드
-
-[온갖 메서드 짬뽕해서 푸는 문제 꼭 정리해놓을 것](https://school.programmers.co.kr/learn/courses/30/lessons/120844)
 ### __array.length__: 배열의 길이 반환
+
+## 추가/제거/
+[온갖 메서드 짬뽕해서 푸는 문제 꼭 정리해놓을 것](https://school.programmers.co.kr/learn/courses/30/lessons/120844)
 ### __array.push()__: 배열의 끝에 요소를 추가
+### __array.unshift__(): 새로운 요소를 배열의 맨 앞에 추가하고 새로운 길이를 반환 
+### __array.pop()__: 배열의 마지막 요소를 제거하고 그 요소를 반환 
 ### __array.splice__: 배열의 기존 요소를 삭제 또는 교체하거나 새 요소를 추가하여 배열의 내용을 변경
 ```js
  array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
@@ -17,15 +20,17 @@ const arr = ['A', 'C', 'D', 'F'];
 arr.splice(1, 0, 'B');
 console.log(arr);   //['A', 'B', 'C', 'D', 'F']
 ```
-
-
 ### __array.reverce()__: 배열의 순서 반전
+
+## 문자열 반환
 ### __array.join()__: 배열의 모든 요소를 쉽표나 지정된 문자열로 구분해 연결한 문자열을 반환
 ```js
  arr.join()
 ```
  기본: ,로 구분  
 '': 연달아 붙임(띄어쓰기x)
+## 검색
+
 ### __array.indexOf()__: 주어진 요소를 찾을 수 있는 인덱스를 반환, 찾을 수 없는 경우 -1 반환
 ```js
 //(찾으려는 요소, 찾기 시작할 인덱스 지정)
