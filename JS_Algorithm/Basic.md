@@ -13,4 +13,24 @@
 ## const
 + __중복 선언 불가__
 + __재할당 불가__
-+ __스코프__: let과 동일
++ __스코프__: let과 동일  
+
+
+# 2. 스프레드 연산자(...)
+배열, 함수, 객체 등에 활용 가능  
+## 배열에서의 활용 
+[참고 링크](https://growing-jiwoo.tistory.com/35)  
+[얕은 복사/깊은 복사 참고](https://likedev.tistory.com/entry/Javascript-%EB%B0%B0%EC%97%B4-%EB%B3%B5%EC%82%AC%ED%95%98%EB%8A%94-%EC%97%AC%EB%9F%AC%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95%EC%96%95%EC%9D%80-%EB%B3%B5%EC%82%AC-%EA%B9%8A%EC%9D%80-%EB%B3%B5%EC%82%AC)
+
+```js
+// ES6 spread operator
+let arr1 = ['apple','banana']; 
+let arr2 = [...arr1]; 
+
+arr2.push('orange'); 
+
+console.log(arr2); // [ "apple", "banana", "orange" ]
+
+// 원본 배열은 변경되지 않습니다.
+console.log(arr1); // [ "apple", "banana" ]
+```

@@ -21,7 +21,7 @@ const arr = ['A', 'C', 'D', 'F'];
 arr.splice(1, 0, 'B');
 console.log(arr);   //['A', 'B', 'C', 'D', 'F']
 ```
-## 변경
+## 반전
 ### __array.reverce()__: 배열의 순서 반전
 
 ## 문자열 반환

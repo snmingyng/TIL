@@ -59,3 +59,13 @@ return emergency.map((x) => levelEmerg.indexOf(x)+1);
 배열에 객체를 적용시킨 예시
 ### [프로그래머스 0: 가위 바위 보](https://school.programmers.co.kr/learn/courses/30/lessons/120839)
 배열을 필요에 따라 만들어 적용 가능(다른 사람의 풀이 참조해서 다시 풀어볼 것)
+```js
+function solution(rsp) {
+    //가위2 바위0 보5
+    //각각 이길 수 있는 패를 대응시킨 객체 생성
+    let arr = { 2: 0, 0: 5, 5: 2};
+    
+    var answer = [...rsp].map(v => arr[v]).join('');
+    return answer;
+}
+```
