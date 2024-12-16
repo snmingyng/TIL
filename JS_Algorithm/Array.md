@@ -49,3 +49,7 @@ arr.indexOf(searchElement, fromIndex)
  [__프로그래머스 0: 한 번만 등장한 문자__](https://school.programmers.co.kr/learn/courses/30/lessons/120896)  
  ```js
  arr.lastIndexOf(searchElement)
+```
+
+## __reduce()__
+[코딩에브리바디](https://codingeverybody.kr/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-reduce-%ED%95%A8%EC%88%98/)

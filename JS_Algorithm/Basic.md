@@ -34,3 +34,10 @@ console.log(arr2); // [ "apple", "banana", "orange" ]
 // 원본 배열은 변경되지 않습니다.
 console.log(arr1); // [ "apple", "banana" ]
 ```
+
+# 3. 삼항연산자
+```js
+condition ? exprIfTrue : exprIfFalse;
+//조건문 ? 참일 때 실행: 거짓일 때 실행
+```
+
