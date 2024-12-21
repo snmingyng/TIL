@@ -53,3 +53,15 @@ arr.indexOf(searchElement, fromIndex)
 
 ## __reduce()__
 [코딩에브리바디](https://codingeverybody.kr/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-reduce-%ED%95%A8%EC%88%98/)
+
+### __array.slice()__: 어떤 배열의 begin부터 end까지(혹은 end 미포함)에 대한 얕은 복사본 반환
+[프로그래스 0: 잘라서 배열 저장하기](https://school.programmers.co.kr/learn/courses/30/lessons/120913)
+```js
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals.slice(2));
+//["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+//["camel", "duck"]
+```
